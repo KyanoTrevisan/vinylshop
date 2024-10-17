@@ -22,6 +22,8 @@ Route::view('playground', 'playground')->name('playground');
 
 Route::view('under-construction', 'under-construction')->name("under-construction");
 
+Route::view('download_covers', 'admin.download_covers')->name('download_covers');
+
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('records', function () {
         $records = [
